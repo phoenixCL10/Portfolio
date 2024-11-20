@@ -3,7 +3,7 @@
     padding: 0;
 }
 :root {
-    --bg-color: #fffcf6;
+    --bg-color: #fcf7ef;
   }
 html{
     background: var(--bg-color); 
@@ -38,5 +38,61 @@ body{
     text-decoration: none;
     color: #e1e57e;
 }
-/*Section 2*/
+/*-------------------------------------------*/
 
+.checkbtn{
+    display: none;
+}
+#check {
+    display: none;
+}
+
+
+/* Media Query */
+@media (min-width: 300px) and (max-width: 800px)  {
+    body{
+        font-family: 'Arial', sans-serif;
+        color: #333;
+        width: 100%;
+    }
+    .header{
+        padding: 10px 5px;
+    }
+    /*Navbar*/
+    .menu{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #f4f5dd;
+        top: 10px;
+        left:-100%;
+        text-align: center;
+        transition: all .5s;
+    }
+    .navbar .menu{
+        display: block;
+        margin: 40px 0;
+        line-height: 70px;
+    }
+    .navbar .menu a{
+        font-size: 20px;
+        color: #333;
+    }
+    .navbar .menu a:hover{
+        color: #e1e57e;
+    }
+    .checkbtn{
+        display: block;
+        float: right;
+        margin-right: 20px;
+        cursor: pointer;
+    }
+    .bar-menu{
+        width: 30px;
+    }
+    #check:checked ~ ul{
+        left: 0;
+    }
+
+    
+  }
