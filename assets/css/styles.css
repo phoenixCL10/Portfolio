@@ -5,6 +5,12 @@
 :root {
     --bg-color: #fcf7ef;
   }
+@font-face {
+    font-family: 'great-vibes';
+    src: url('../fonts/Great_Vibes/GreatVibes-Regular.ttf');
+    font-weight: normal;
+    font-style: normal;
+} 
 html{
     background: var(--bg-color); 
 }
@@ -46,7 +52,50 @@ body{
 #check {
     display: none;
 }
+/* Hero Section */
+.hero {
+    width: 80%;
+    margin-left: 21%;
+    margin-top: 5rem;
+    padding: 1rem;
+}
+.title{
+    margin: 20px auto;
+}
+.main-container-hero{
+    display: flex;
+    margin-top: 2rem;
+}
+.main-container-hero img{
+    width: 20rem;
+    height: 20rem;
+    border-radius: 15px;
+}
+.hero-right{
+    padding: 0 3rem;
+    display: flex;
+    flex-direction: column;
+}
+.hero-right span{
+    margin-top: 10%;
+    font-family: 'great-vibes';
+    font-size: 40px;
+    
 
+}
+h1{
+    font-size: 40px;
+}
+h2{
+    margin-bottom: 2%;  
+}
+.hero-right p{
+    line-height: 1.5
+}
+.line{
+    color: #333;
+    margin-top: 8rem;
+}
 
 /* Media Query */
 @media (min-width: 300px) and (max-width: 800px)  {
@@ -92,6 +141,45 @@ body{
     }
     #check:checked ~ ul{
         left: 0;
+    }
+    /*hero*/
+    .hero {
+        width: 90%;
+        margin-left: 5%;
+        padding: 1rem;
+    }
+
+    .main-container-hero {
+        flex-direction: column; /* Apila los elementos uno encima del otro en pantallas pequeñas */
+        align-items: center; /* Centra los elementos */
+        text-align: center; /* Centra el texto */
+    }
+
+    .main-container-hero img {
+        width: 80%; /* Reduce el tamaño de la imagen para dispositivos móviles */
+        height: auto; /* Ajusta la altura de la imagen automáticamente */
+    }
+
+    .hero-right {
+        padding: 2rem; /* Reduce el padding para pantallas más pequeñas */
+        width: 100%;
+    }
+
+    .hero-right span {
+        font-size: 30px; /* Ajusta el tamaño del texto para pantallas pequeñas */
+    }
+
+    h1 {
+        font-size: 30px; /* Reduce el tamaño de los títulos en móviles */
+    }
+
+    h2 {
+        font-size: 18px;
+    }
+
+    .hero-right p {
+        font-size: 1rem; /* Ajusta el tamaño del texto */
+        padding: 0 1rem; /* Añade algo de padding para mejorar la legibilidad */
     }
 
     
