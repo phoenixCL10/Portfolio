@@ -57,6 +57,7 @@ body{
     width: 80%;
     margin-left: 21%;
     margin-top: 5rem;
+    margin-bottom: 5rem;
     padding: 1rem;
 }
 .title{
@@ -94,9 +95,48 @@ h2{
 }
 .line{
     color: #333;
-    margin-top: 8rem;
+    width: 80%;
+    margin-left: 20%;
 }
-
+/*-------------------------------------------*/
+/*about section*/
+.about-section, .education-section{
+    width: 80%;
+    margin-left: 20%;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: space-around;  
+}
+.about-section p{
+    margin-left: 1rem;
+    margin-top: 5px;
+    color: #666666;
+}
+.contact-item{
+    padding: 20px;
+    margin: 10px;
+}
+.education-item{
+    padding: 20px;
+    margin: 10px;
+}
+.education-item h2{
+    font-weight: bold;
+}
+.education-item h3{
+    padding: 5px;
+}
+.education-item p{
+    padding: 5px;
+    color: #666666;
+}
+.education-item span{
+    font-size: 12px;
+    padding: 5px;
+    color: #666666;
+}
+/*-----------------------------------------*/
+/*experience section*/
 /* Media Query */
 @media (min-width: 300px) and (max-width: 800px)  {
     body{
