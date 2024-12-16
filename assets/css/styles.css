@@ -4,6 +4,8 @@
 }
 :root {
     --bg-color: #fcf7ef;
+    --amarillo-oscuro: #ebc737;
+    --amarillo-claro: #f7de21;
   }
 @font-face {
     font-family: 'great-vibes';
@@ -14,10 +16,15 @@
 html{
     background: var(--bg-color); 
 }
+::selection {
+    background-color: var(--amarillo-claro); 
+    color: #000; 
+  }
 body{
-    font-family: 'Arial', sans-serif;
+    font-family: 'serif';
     color: #333;
-    width: 80%;
+    width: 70%;
+    margin-left: 15%;
 }
 /*Header*/
 .header{
@@ -42,7 +49,7 @@ body{
 }
 .navbar .menu a:hover{
     text-decoration: none;
-    color: #e1e57e;
+    color: var(--amarillo-claro);
 }
 /*-------------------------------------------*/
 
@@ -54,8 +61,8 @@ body{
 }
 /* Hero Section */
 .hero {
-    width: 80%;
-    margin-left: 21%;
+    width: 100%;
+    /* margin-left: 21%; */
     margin-top: 5rem;
     margin-bottom: 5rem;
     padding: 1rem;
@@ -76,33 +83,47 @@ body{
     padding: 0 3rem;
     display: flex;
     flex-direction: column;
+    align-items: flex-start;
 }
 .hero-right span{
-    margin-top: 10%;
+    margin-top: 2rem;
     font-family: 'great-vibes';
     font-size: 40px;
     
 
 }
-h1{
-    font-size: 40px;
+.title h1{
+    font-size: 50px;
 }
-h2{
+.hero-right h2{
     margin-bottom: 2%;  
 }
 .hero-right p{
     line-height: 1.5
 }
+.btn-cv {
+    width: auto;
+    padding: 10px 20px;
+    margin-top: 1rem;
+    background-color: var(--amarillo-oscuro);
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 5px; /* Bordes redondeados */
+    transition: background-color 0.3s ease; /* Efecto al pasar el mouse */
+  }
+  
+  .btn-cv:hover {
+    background-color: var(--amarillo-claro); /* Cambia el color al pasar el mouse */
+  }
 .line{
     color: #333;
-    width: 80%;
-    margin-left: 20%;
+    width: 100%;
 }
 /*-------------------------------------------*/
 /*about section*/
 .about-section, .education-section{
-    width: 80%;
-    margin-left: 20%;
+    width: 100%;
     margin-bottom: 30px;
     display: flex;
     justify-content: space-around;  
@@ -120,9 +141,6 @@ h2{
     padding: 20px;
     margin: 10px;
 }
-.education-item h2{
-    font-weight: bold;
-}
 .education-item h3{
     padding: 5px;
 }
@@ -137,6 +155,48 @@ h2{
 }
 /*-----------------------------------------*/
 /*experience section*/
+.experience {
+    margin: 0 auto;
+    padding: 2rem;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    align-items: center;
+  }
+  .experience-title h1 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    text-align: center;
+    color: #333;
+  }
+  
+  /* Contenedor de elementos */
+  .experience-items {
+    gap: 2rem; /* Espaciado entre ítems */
+  }
+  
+  /* Cada elemento individual */
+  .ex-item {
+    padding: 1.5rem;
+  }
+  
+  .ex-item h3 {
+    font-size: 1.4rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .ex-item span {
+    font-size: 0.9rem;
+    color: #777;
+    display: block;
+    margin-bottom: 1rem;
+  }
+  
+  .ex-item p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #555;
+  }
+
 /* Media Query */
 @media (min-width: 300px) and (max-width: 800px)  {
     body{
