@@ -196,6 +196,68 @@ body{
     line-height: 1.6;
     color: #555;
   }
+  /*----------------------------------------------*/
+  /*projects section*/
+  .projects {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+    background-color: #fdf9f3;
+    color: #333;
+  }
+  
+  .projects-title h1 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    text-align: center;
+    color: #333;
+  }
+  
+  /* Grid de Proyectos */
+  .projects-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columnas */
+    grid-template-rows: repeat(2, auto); /* 2 filas */
+    gap: 2rem; /* Espaciado entre proyectos */
+  }
+  
+  /* Cada ítem del proyecto */
+  .project-item {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden; /* Para mantener bordes redondeados en imágenes */
+    transition: transform 0.3s ease;
+  }
+  
+  .project-item img {
+    width: 100%;
+    height: 180px; /* Altura fija para las imágenes */
+    object-fit: cover; /* Escala la imagen manteniendo proporción */
+  }
+  
+  .project-description {
+    padding: 1rem;
+    text-align: center;
+  }
+  
+  .project-description h3 {
+    font-size: 1.3rem;
+    margin-bottom: 0.5rem;
+    color: #8a4fff;
+  }
+  
+  .project-description p {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.5;
+  }
+  
+  .project-item:hover {
+    transform: translateY(-5px); /* Efecto hover */
+  }
+  
+ 
 
 /* Media Query */
 @media (min-width: 300px) and (max-width: 800px)  {
