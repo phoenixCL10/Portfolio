@@ -124,7 +124,7 @@ body{
 /*about section*/
 .about-section, .education-section{
     width: 100%;
-    margin-bottom: 30px;
+    margin: 80px 0;
     display: flex;
     justify-content: space-around;  
 }
@@ -200,17 +200,17 @@ body{
   /*projects section*/
   .projects {
     max-width: 1200px;
-    margin: 0 auto;
+    margin: 2rem auto;
     padding: 2rem;
-    background-color: #fdf9f3;
     color: #333;
   }
   
   .projects-title h1 {
     font-size: 2.5rem;
-    margin-bottom: 2rem;
+    margin-bottom: 4rem;
     text-align: center;
     color: #333;
+
   }
   
   /* Grid de Proyectos */
@@ -223,11 +223,8 @@ body{
   
   /* Cada ítem del proyecto */
   .project-item {
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     overflow: hidden; /* Para mantener bordes redondeados en imágenes */
-    transition: transform 0.3s ease;
+    cursor: pointer;
   }
   
   .project-item img {
@@ -251,10 +248,6 @@ body{
     font-size: 1rem;
     color: #555;
     line-height: 1.5;
-  }
-  
-  .project-item:hover {
-    transform: translateY(-5px); /* Efecto hover */
   }
   
  
